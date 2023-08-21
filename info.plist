@@ -73,7 +73,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python gps.py "{query}"
+				<string>python3 gps.py "{query}"
 
 </string>
 				<key>scriptargtype</key>
