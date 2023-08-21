@@ -146,6 +146,8 @@ echo $query
 	</array>
 	<key>readme</key>
 	<string></string>
+	<key>readme</key>
+ 	<string>https://github.com/aloyr/alfred-google-chrome-profile-switcher-workflow/blob/main/README.md</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A7F94DA-8824-4BEA-892C-25D9882A4143</key>
