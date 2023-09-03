@@ -13,15 +13,12 @@ else:
 
 
 def get_profiles():
-    profiles = glob.glob(prof_dir + '/Profile*')
+    profiles = glob.glob(prof_dir + '/*/Preferences')
     output = {'items': []}
     for profile in profiles:
-        prefs_raw = profile + '/Preferences'
-        if not os.path.exists(prefs_raw):
-            continue
-        with open(prefs_raw, 'r') as f:
+        with open(profile, 'r') as f:
             prefs = json.load(f)
-        profile_id = profile.split('/')[-1]
+        profile_id = profile.split('/')[-2:-1]
         profile_name = prefs['profile']['name']
         if profile_name.lower().find(args.lower()) < 0:
             continue
